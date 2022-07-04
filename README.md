@@ -1,5 +1,4 @@
 # Guessing Game
-
 ## Background
 ### This is a simple Java Spring Boot application that illustrates how to:
 - set up the basic structure of a Spring Boot application
