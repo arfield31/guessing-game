@@ -1,3 +1,18 @@
+/*
+ *    Proprietary and Confidential
+ *
+ *    This source code is the property of:
+ *
+ *    Andrew Field
+ *
+ *    http://www.github.com/arfield31
+ *
+ *    Author:         Andrew Field, arfield31@gmail.com
+ *    Modified by:
+ *    Module:         GuessingService.java
+ *    Description:    handles interactions with the GuessingRepository
+ */
+
 package com.field.guessinggame.service;
 
 import com.field.guessinggame.model.GuessingResult;

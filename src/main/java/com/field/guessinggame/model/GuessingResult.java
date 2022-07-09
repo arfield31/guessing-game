@@ -1,3 +1,18 @@
+/*
+ *    Proprietary and Confidential
+ *
+ *    This source code is the property of:
+ *
+ *    Andrew Field
+ *
+ *    http://www.github.com/arfield31
+ *
+ *    Author:         Andrew Field, arfield31@gmail.com
+ *    Modified by:
+ *    Module:         GuessingResult.java
+ *    Description:    plain old java object for GuessingResult
+ */
+
 package com.field.guessinggame.model;
 
 import javax.persistence.Entity;
