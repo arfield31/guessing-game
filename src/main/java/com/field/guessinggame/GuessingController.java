@@ -17,25 +17,25 @@ public class GuessingController {
     private static Logger logger = Logger.getLogger("Field.guessing");
 
     @Autowired
-    GuessingService resultService;
+    GuessingService guessingServiceService;
 
     @GetMapping("/result")
     private List<GuessingResult> getAllResult(){
         logger.info("Inside Controller.getAllResult()");
-        return resultService.getAllResult();
+        return guessingServiceService.getAllResult();
     }
 
     @PostMapping("/result")
     private String saveResult(@RequestBody GuessingResult result){
         logger.info(result.toString());
-        resultService.saveOrUpdate(result);
+        guessingServiceService.saveOrUpdate(result);
         return result.getName() + " " + result.getNumGuesses();
     }
 
     @GetMapping("/leaderboard")
     private List<GuessingResult> leaderboard() {
         logger.info("Inside leaderboard");
-        List<GuessingResult> gr = resultService.getAllResult();
+        List<GuessingResult> gr = guessingServiceService.getLeaderboard();
         logger.info("past getallresult");
         Collections.sort(gr);
         return gr;

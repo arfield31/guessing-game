@@ -1,5 +1,6 @@
 package com.field.guessinggame;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -9,6 +10,9 @@ import java.util.logging.Logger;
 @Service
 public class GuessingService {
 
+    @Autowired
+    GuessingRepository repository;
+
     private static Logger logger = Logger.getLogger("Field.guessing");
     private static List<GuessingResult> results = new ArrayList<GuessingResult>(10);
     public List<GuessingResult> getAllResult() {
@@ -16,12 +20,15 @@ public class GuessingService {
         return results;
     }
     public void saveOrUpdate(GuessingResult result) {
-        results.add(result);
-    }
-    //public List<GuessingResult> getLeaderboard(){
+        repository.save(result);
 
-    // return results;
-    // }
+
+        //results.add(result);
+    }
+    public List<GuessingResult> getLeaderboard(){
+        repository.findAll().forEach(result -> results.add(result));
+        return results;
+    }
 
 
 }
