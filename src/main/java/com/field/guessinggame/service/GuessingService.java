@@ -1,5 +1,7 @@
-package com.field.guessinggame;
+package com.field.guessinggame.service;
 
+import com.field.guessinggame.model.GuessingResult;
+import com.field.guessinggame.repository.GuessingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

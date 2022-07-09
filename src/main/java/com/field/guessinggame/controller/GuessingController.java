@@ -1,5 +1,7 @@
-package com.field.guessinggame;
+package com.field.guessinggame.controller;
 
+import com.field.guessinggame.model.GuessingResult;
+import com.field.guessinggame.service.GuessingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -7,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.*;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 

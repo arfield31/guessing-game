@@ -1,9 +1,7 @@
-package com.field.guessinggame;
+package com.field.guessinggame.repository;
 
+import com.field.guessinggame.model.GuessingResult;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.jpa.repository.Query;
-
-import java.util.List;
 
 public interface GuessingRepository extends CrudRepository<GuessingResult, Integer>
 {
