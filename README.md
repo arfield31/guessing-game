@@ -10,7 +10,7 @@
   - Spring Boot automatically serves static content if it is placed in src/main/resources/public
   - see src/main/resources/public/index.html
 
-### How To Test Repo
+## How To Build and Run Guessing Game
 - (1) clone the repo,
 - (2) execute gradle bootRun
 - (3) point the browser at localhost:8080/index.html,
