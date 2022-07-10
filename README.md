@@ -10,9 +10,9 @@
   - Spring Boot automatically serves static content if it is placed in src/main/resources/public
   - see src/main/resources/public/index.html
 
-How To
-(1) clone the repo,
-(2) execute gradle bootRun
-(3) point the browser at localhost:8080/index.html,
-(4) play the game
-(5) point the browser at localhost:8080/h2-console to see the contents of the database.
+###How To Test Repo
+- (1) clone the repo,
+- (2) execute gradle bootRun
+- (3) point the browser at localhost:8080/index.html,
+- (4) play the game
+- (5) point the browser at localhost:8080/h2-console to see the contents of the database.
